@@ -18,7 +18,7 @@ export  const cardsData = () => [
     name: "Название товара 1",
     price: "5 700 С",
     new: true,
-    like: false,
+    like: true,
 
 
 },
@@ -29,7 +29,7 @@ export  const cardsData = () => [
     name: "Название товара 2",
     price: "3 300 С",
     new: true,
-    like: false,
+    like: true,
 
 
 },
@@ -40,7 +40,7 @@ export  const cardsData = () => [
     name: "Название товара 3",
     price: "2 490 С",
     new: true,
-    like: false,
+    like: true,
 
 
 },
@@ -51,7 +51,7 @@ export  const cardsData = () => [
     name: "Название товара 4",
     price: "9 990 С",
     new: true,
-    like: false,
+    like: true,
 
 
 },
@@ -73,7 +73,7 @@ export  const cardsData = () => [
     name: "Название товара 6",
     price: "5 550 С",
     new: true,
-    like: false,
+    like: true,
 
 
 },
@@ -84,7 +84,7 @@ export  const cardsData = () => [
     name: "Название товара 7",
     price: "8 190 С",
     new: true,
-    like: false,
+    like: true,
 
 
 },
@@ -95,7 +95,7 @@ export  const cardsData = () => [
     name: "Название товара 8",
     price: "3 100 С",
     new: true,
-    like: false,
+    like: true,
 
 
 },
@@ -117,7 +117,7 @@ export  const cardsData = () => [
     name: "Название товара 10",
     price: "5 550 С",
     new: true,
-    like: false,
+    like: true,
 
 
 },
@@ -128,7 +128,7 @@ export  const cardsData = () => [
     name: "Название товара 11",
     price: "8 190 С",
     new: true,
-    like: false,
+    like: true,
 
 
 },
@@ -139,7 +139,7 @@ export  const cardsData = () => [
     name: "Название товара 12",
     price: "3 100 С",
     new: true,
-    like: false,
+    like: true,
 
 
 }

@@ -2,7 +2,7 @@ import Lamis from "../../assets/Header/LAMIS 1.svg"
 import Like from "../../assets/Header/like.svg"
 import Search from "../../assets/Header/search.svg"
 
-export default function Header() {
+export default function Header( {openModal} ) {
     return (
         <header className="header absolute top-0 left-0 z-50 w-full ">
             <div className="container  max-w-313 mx-auto ">
@@ -37,7 +37,10 @@ export default function Header() {
                         <div className="header__main-seacrh flex items-center gap-[10.5px] ">
                             <img src={Search} alt="Search logo" className=" w-4.75 cursor-pointer " />
                             <input id="name" type="text" placeholder="Поиск" className="w-20 h-[24] text-[13px] font-medium text-white/70 outline-none " />
+                            <button onClick={ openModal} >
+
                             <img src={Like} alt="Search logo" className="w-4.75 cursor-pointer " />
+                            </button>
                         </div>
 
 
