@@ -2,7 +2,10 @@ import Lamis from "../../assets/Header/LAMIS 1.svg"
 import Like from "../../assets/Header/like.svg"
 import Search from "../../assets/Header/search.svg"
 
-export default function Header( {openModal} ) {
+export default function Header({ openModal, setQuery, query }) {
+
+
+
     return (
         <header className="header absolute top-0 left-0 z-50 w-full ">
             <div className="container  max-w-313 mx-auto ">
@@ -20,7 +23,7 @@ export default function Header( {openModal} ) {
                         </div>
                     </div>
 
-                        <span className="pointer-events-none absolute inset-x-0 b-0 h-px   bg-white/25" />
+                    <span className="pointer-events-none absolute inset-x-0 b-0 h-px   bg-white/25" />
                     <div className="header__main relative flex justify-between items-center py-7.25 ">
 
 
@@ -36,16 +39,22 @@ export default function Header( {openModal} ) {
                         </div>
                         <div className="header__main-seacrh flex items-center gap-[10.5px] ">
                             <img src={Search} alt="Search logo" className=" w-4.75 cursor-pointer " />
-                            <input id="name" type="text" placeholder="Поиск" className="w-20 h-[24] text-[13px] font-medium text-white/70 outline-none " />
-                            <button onClick={ openModal} >
+                            <input
+                                id="name"
+                                type="text"
+                                value={query}
+                                onChange={(e) => setQuery(e.target.value)}
+                                placeholder="Поиск"
+                                className="w-20 h-[24] text-[13px] font-medium text-white/70 outline-none " />
+                            <button onClick={openModal} >
 
-                            <img src={Like} alt="Search logo" className="w-4.75 cursor-pointer " />
+                                <img src={Like} alt="Search logo" className="w-4.75 cursor-pointer " />
                             </button>
                         </div>
 
 
                     </div>
-                        <span className="pointer-events-none absolute t-0 inset-x-0 h-px bg-white/25" />
+                    <span className="pointer-events-none absolute t-0 inset-x-0 h-px bg-white/25" />
 
                 </div>
             </div>

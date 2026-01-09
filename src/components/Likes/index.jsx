@@ -8,7 +8,7 @@ export default function Likes({ card, closeModal }) {
     return (
         <section>
             <div onClick={handleBack} className="fixed inset-0 bg-black/60 z-50 flex justify-center items-start pt-10 overflow-auto">
-                <div className="bg-white w-[500px] max-w-full p-6 rounded-xl flex flex-col relative">
+                <div className="bg-white w-125 max-w-full p-6 rounded-xl flex flex-col relative">
 
                     <button
                         onClick={closeModal}

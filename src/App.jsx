@@ -9,6 +9,8 @@ import Likes from "./components/Likes/index.jsx"
 export default function App() {
   const [card, setCard] = useState([])
   const [isOpen, setIsOpen] = useState(false)
+  const [query, setQuery] = useState("");
+
   const addCard = (item) => {
     if (!item) return
 
@@ -18,9 +20,9 @@ export default function App() {
   return (
     <>
 
-      <Header openModal={() => setIsOpen(true)} />
+      <Header openModal={() => setIsOpen(true)} query={query} setQuery={setQuery} />
       <PageHeader />
-      <Cards addCard={addCard} />
+      <Cards addCard={addCard} query={query} />
       {isOpen && (
         <Likes card={card} closeModal={() => setIsOpen(false)} />
       )}
